@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>
+         Treasure Hunt v1.0
+      </title>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+      <style>
+		div{text-align: center;}
+	  </style>
+	  <style>
+		body {background-image: url("http://th05.deviantart.net/fs71/PRE/i/2012/364/7/7/pirate__s_treasure_map_by_makkeroe-d5po5v7.jpg"); background-size: cover;}
+	  </style>
+   </head>
+   <body onload="init();">
+      <div>
+	   <h1>Treasure Hunt</h1>
+	   <a href="mailto:biruk.yohannes1@marist.edu?Subject=hello"> Mail me </a>
+       <br>
+	   <br>
+	   Current Location:
+	   <input readonly
+			  type="text"
+			  id="txt_loc"
+			  value="Entrance">
+	   <br>
+	   <textarea readonly rows="15" cols="30" id="ta_main"></textarea>
+	   <br>
+	   <input type="button"
+			  value="North"
+			  id="btnNorth"
+			  onclick="btnNorth_Click();">
+	   <input type="button"
+			  value="East"
+			  id="btnEast"
+			  onclick="btnEast_Click();">
+	   <input type="button"
+			  value="South"
+			  id="btnSouth"
+			  onclick="btnSouth_Click();">
+	   <input type="button"
+			  value="West"
+			  id="btnWest"
+			  onclick="btnWest_Click();">
+       
+	   <br>
+	   <br>
+	   Command:
+	   <input type="text"
+			  name="txtCommand"
+			  id="txtCommand">
+	   <input type="button"
+			  name="btnCommand"
+			  id="btnCommand"
+			  value="Go"
+			  onclick="btn_Command();">
+	   <br>
+	   Points:
+	   <input readonly
+			  type="text"
+			  id="txt_points"
+			  value=0>
+		<br>
+		<br>
+		<image src="Untitled.png" style="width:500px; height:300px">
+	  </div> 
+   </body>
+   <script type="text/javascript" src="locations.js"></script>
+</html>
